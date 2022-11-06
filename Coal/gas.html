@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+  <body>
+  об’єм спожитого газ - X
+    </input><br>
+<input type="Number" id="n1" >
+
+  </input><br>
+   густина природного газу - p
+    </input><br>
+<input type="Number" id="n2" >
+
+  </input><br>
+     knox
+    </input><br>
+<input type="Number" id="n3" >
+    
+  </input><br>  
+    робоча теплота згорання палива Qr
+    </input><br>
+<input type="Number" id="n4" >
+    
+  </input><br>
+     kN2o
+    </input><br>
+<input type="Number" id="n5" >
+    
+  </input><br>
+     Kco
+    </input><br>
+<input type="Number" id="n6" >
+    
+  </input><br>
+     Kch4
+    </input><br>
+<input type="Number" id="n7" >
+    
+  </input><br>
+    </input><br>
+    Kco2
+    </input><br>
+<input type="Number" id="n8" >
+    
+    
+    
+  </input><br>
+<input type="button" onclick ="Myfun()" value="ok"></input><br>
+    <div id="text1">B</div>
+    <div id="text2">Enox</div>
+    <div id="text5">En2o</div>
+    <div id="text3">Eco</div>
+    <div id="text4">Ech4</div>
+    <div id="text6">Eco2</div>
+  <script>
+
+    function Myfun() {
+var X = Number(document.getElementById("n1").value);
+    var p = Number(document.getElementById("n2").value);
+      var knox = Number(document.getElementById("n3").value);
+      var Qr = Number(document.getElementById("n4").value);
+      var kN2o = Number(document.getElementById("n5").value);
+      var Kco = Number(document.getElementById("n6").value);
+      var Kch4 = Number(document.getElementById("n7").value);
+       var Kco2 = Number(document.getElementById("n8").value);
+      
+      
+
+  var B = X * p ;
+
+      var Enox = 0.000000001 * knox * Qr * B ;
+     var En2o = 0.000000001 * kN2o * Qr * B ; 
+      var Eco = 0.000000001 * Kco * Qr * B ; 
+      var Ech4 = 0.000000001 * Kch4 * Qr * B ; 
+      var Eco2 = 0.000000001 * Kco2 * Qr * B ; 
+
+      document.getElementById("text1").innerHTML = "B: " + B;
+      document.getElementById("text2").innerHTML = "Enox: " + Enox;
+      document.getElementById("text3").innerHTML = "En2o: " + En2o;
+      document.getElementById("text4").innerHTML = "Eco: " + Eco;
+      document.getElementById("text5").innerHTML = "Ech4: " + Ech4;
+      document.getElementById("text6").innerHTML = "Eco2: " + Eco2;
+    }
+    
+  </script> 
+
+
+
+
+    
+  </body>
+</html>

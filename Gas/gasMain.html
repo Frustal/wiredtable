@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the best webiste</title>
+    <link rel="stylesheet" href="styleGas.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./bin.png" alt="logo" >
+        <nav>
+            <ul class="nav_links">
+                <li><a href="../index.html">Main</a></li>
+                <li><a href="../Coal/coalMain.html">Coal emission</a></li>
+                <li><a href="../Gas/gasMain.html">Gas emission</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="joinus.html"><button>Join Us</button></a>
+    </header>
+</body>
+    <div class="row">
+        <div class="column">
+            <h2 class="header" >Input</h2>
+            <input class="energy_input" type="number" placeholder="Volume of consumed gas" id="vol_gas">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Density of gas" id="den_gas">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient Nox" id="knox">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Working heat of fuel combustion" id="working_heat">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient N2O" id="kn2o">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient CO" id="kco">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient CH4" id="kch4">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient CO2" id="kco2">
+            <p></p>
+          </div>
+          <div class="column">
+            <h2 class="header" >Emission (ton)</h2>
+            <div class="coal" id="text1">Expenses of gas</div>
+            <div class="coal" id="text2">Emission of NOx</div>
+            <div class="coal" id="text3">Emission of N2O</div>
+            <div class="coal" id="text4">Emission of CO</div>
+            <div class="coal" id="text5">Emission of CH4</div>
+            <div class="coal" id="text6">Emission of CO2</div>
+          </div>
+    </div>
+
+    <div class="center"><button  onclick="calculate()">Calculate</button></div>
+
+    <script src="../Gas/gas.js"></script>
+</html>
