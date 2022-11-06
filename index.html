@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,65 @@
         </nav>
         <a class="cta" href="joinus.html"><button>Join Us</button></a>
     </header>
+</body>
+    <div class="row">
+        <div class="column">
+            <h2 class="header" >Energy</h2>
+            <input class="energy_input" type="number" placeholder="Building heat consumption(kWt)" id="Q_max">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Internal temperature in the heat room" id="t_opal">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Lowest temperature of the coldest month" id="t_min">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Average temperature of the coldest month" id="t_avrg">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Heating days" id="days_opal">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Period of operation of the electric boiler(%)" id="n_el_kotel">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Energy of electric boiler(kWt)" id="q_el_kotel">
+            <p></p>
+          </div>
+          <div class="column">
+            <h2 class="header" >Spendings</h2>
+            <input class="energy_input" type="number" placeholder="Cost of electric energy" id="cost_el">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Cost of gas" id="cost_gas">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Efficiency coeficient of the boiler(%)" id="kkd_kotel">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Coefficient of energy efficiency" id="koef_q">
+            <p></p>
+          </div>
+          <div class="column">
+            <h2 class="header" >Paybacks</h2>
+            <input class="energy_input" type="number" placeholder="Cost of boiler" id="cost_kotel">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Cost of heat pump" id="cost_tepl_nas">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Amount of fancoils" id="num_fancoil">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Cost of fancoil" id="cost_fancoil">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Cost of electric boiler" id="cost_el_kotel">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Gas setup" id="cost_gas_setup">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Amount of air conditioning system" id="num_sys_kond">
+            <p></p>
+            <input class="energy_input" type="number" placeholder="Cost of air conditioning system" id="cost_sys_kond">
+            <p></p>
+          </div>
+    </div>
 
+    <div class="center"><button  onclick="print_res()">Calculate</button></div>
+
+    <script src="scripts/payback.js"></script>
+    
+<body>
+    <div class="output">
+        <div class="left-div" id="sixth_div">Payback with changing heating system (years): </div>
+        <div class="right-div" id="seventh_div">Payback with installing heating pump instantly (years): </div>
+    </div>
 </body>
 </html>
