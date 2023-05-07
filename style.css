@@ -142,3 +142,28 @@ button:hover{
     background-color: rgba(12, 187, 27, 0.384);
 }
 
+.container {
+    text-align: center;
+    margin: auto;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 500;
+    font-size: px;
+    color: #edf0f1;
+    width: 50%;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* adjust this value to set the distance from the top of the page */
+}
+
+.logo {
+    margin: 0 20px; /* adjust this value to set the distance between the logos */
+    max-width: 100px; /* adjust this value to set the maximum width of the logos */
+}
+
+p {
+    margin-bottom: 10px;
+  }
